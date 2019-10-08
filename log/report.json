@@ -1,0 +1,129 @@
+[
+  {
+    "uri": "features/login.feature",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "name": "Login",
+    "description": "    Para que eu possa gerenciar os filmes do catálogo NinjaFlix\n    Sendo um usuário previamente cadastrado\n    Posso acessar o sistema com o meu email e senha",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@temp",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "id": "login;acesso",
+        "keyword": "Cenario",
+        "name": "Acesso",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@temp",
+            "line": 3
+          },
+          {
+            "name": "@login_happy",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9898639900
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "faço login com \"lpwda@gmail.com\" e \"123456\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3362870500
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ser autenticado",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1029921800
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "devo ver \"Lucas Wagenska\" na área logada",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59600500
+            }
+          }
+        ],
+        "after": [
+          {
+            "embeddings": [
+              {
+                "mime_type": "image/png",
+                "data": "aVZCT1J3bz0K"
+              }
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 297644900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142036700
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
